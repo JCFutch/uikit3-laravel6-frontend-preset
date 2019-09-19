@@ -1,0 +1,32 @@
+{
+    "name": "jcfutch/uikit3-laravel6-frontend-preset",
+    "description": "Alternative frontend preset for Laravel 6.0 and greater.",
+    "keywords": ["uikit3", "frontend", "preset", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cole Futch",
+            "email": "jcfutch@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=7.1",
+    "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+		"phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "JCFutch\\UIKit3Laravel6FrontendPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UIKit3Laravel6FrontendPreset\\UIKit3Laravel6Preset\\UIKit3PresetServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace JCFutch\UIKit3Laravel6FrontendPreset;
+namespace JCFutch\UIKit3Laravel6Preset;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;

@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "UIKit3Laravel6FrontendPreset\\UIKit3Laravel6Preset\\UIKit3Laravel6PresetServiceProvider"
+                "JCFutch\\UIKit3Laravel6Preset\\UIKit3Laravel6PresetServiceProvider"
               ]
 
         }

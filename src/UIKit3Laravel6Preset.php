@@ -66,20 +66,20 @@ class UIKit3Laravel6Preset extends Preset
      */
     protected static function updateBootstrapping()
     {
-        copy(__DIR__.'/includes/app.scss', resource_path('assets/sass/app.scss'));
+        copy(__DIR__.'/includes/app.scss', resource_path('sass/app.scss'));
 
         tap(new Filesystem, function ($filesystem) {
-            $filesystem->delete(resource_path('assets/sass/_variables.scss'));
+            $filesystem->delete(resource_path('sass/_variables.scss'));
 
             $bootstrapJs = str_replace(
                 "require('bootstrap');",
                 "window.UIkit = require('uikit');",
-                $filesystem->get(resource_path('assets/js/bootstrap.js'))
+                $filesystem->get(resource_path('js/bootstrap.js'))
             );
 
             $bootstrapJs = str_replace("window.Popper = require('popper.js').default;", '', $bootstrapJs);
 
-            $filesystem->put(resource_path('assets/js/bootstrap.js'), $bootstrapJs);
+            $filesystem->put(resource_path('js/bootstrap.js'), $bootstrapJs);
         });
     }
 

@@ -12,9 +12,6 @@
     "require": {
     "laravel/framework": "^6.0"
     },
-    "require-dev": {
-		"phpunit/phpunit": "6.*"
-    },
     "autoload": {
         "psr-4": {
             "JCFutch\\UIKit3Laravel6FrontendPreset\\": "src/"

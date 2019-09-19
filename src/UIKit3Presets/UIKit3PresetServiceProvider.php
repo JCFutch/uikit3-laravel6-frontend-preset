@@ -1,11 +1,11 @@
 <?php
 
-namespace JCFutch\UIKit3Laravel6Preset;
+namespace UIKit3Presets;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;
 
-class UIKit3Laravel6PresetServiceProvider extends ServiceProvider
+class UIKit3PresetServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

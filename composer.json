@@ -10,19 +10,12 @@
         }
     ],
     "require": {
-    "laravel/framework": "^6.0"
+    "laravel/framework": "^6.0",
+    "php": "^7.0"
     },
     "autoload": {
         "psr-4": {
-            "JCFutch\\UIKit3Laravel6FrontendPreset\\": "src/"
+            "UIKit3Presets": "src/UIKit3Presets"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "JCFutch\\UIKit3Laravel6Preset\\UIKit3Laravel6PresetServiceProvider"
-              ]
-
-        }
-    }
 }

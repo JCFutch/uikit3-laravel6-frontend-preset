@@ -1,12 +1,12 @@
 <?php
-namespace JCFutch\UIKit3Laravel6Preset;
+namespace UIKit3Presets;
 
 use Artisan;
 use Illuminate\Support\Arr;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset;
 
-class UIKit3Laravel6Preset extends Preset
+class UIKit3Preset extends Preset
 {
     /**
      * Install the preset.

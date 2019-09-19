@@ -9,9 +9,7 @@
             "email": "jcfutch@gmail.com"
         }
     ],
-    "type": "project",
     "require": {
-		"php": ">=7.1",
     "illuminate/support": "~5.0"
     },
     "require-dev": {

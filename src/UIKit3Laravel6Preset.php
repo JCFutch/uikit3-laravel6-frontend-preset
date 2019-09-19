@@ -42,7 +42,7 @@ class UIKit3Laravel6Preset extends Preset
      */
     protected static function updatePackageArray(array $packages)
     {
-        return ['uikit' => '^3.0.0-beta.42'] + Arr::except($packages, [
+        return ['uikit' => '^3'] + Arr::except($packages, [
             'bootstrap',
             'popper.js'
         ]);
@@ -55,7 +55,7 @@ class UIKit3Laravel6Preset extends Preset
      */
     protected static function updateWebpackConfiguration()
     {
-        $mixPath = base_path('vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/vue-stubs/webpack.mix.js');
+        $mixPath = base_path('vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/none-stubs/webpack.mix.js');
         copy($mixPath, base_path('webpack.mix.js'));
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace UIKit3Presets;
+namespace JCFutch\UIKit3Presets;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;

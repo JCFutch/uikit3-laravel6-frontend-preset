@@ -17,5 +17,14 @@
         "psr-4": {
             "UIKit3Presets\\": "src/UIKit3Presets/"
         }
-    }
+    },
+    "extras": {
+      "laravel": {
+        "providers": [
+          "JCFutch\\UIKit3Presets\\UIKit3PresetServiceProvider"
+        ]
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

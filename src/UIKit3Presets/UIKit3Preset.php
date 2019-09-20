@@ -1,5 +1,5 @@
 <?php
-namespace UIKit3Presets;
+namespace JCFutch\UIKit3Presets;
 
 use Artisan;
 use Illuminate\Support\Arr;

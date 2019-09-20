@@ -17,12 +17,12 @@ class UIKit3PresetServiceProvider extends ServiceProvider
         PresetCommand::macro('uikit3', function ($command) {
             $command->info('UIKit3 frontend scaffolding installed successfully.');
             $command->comment('Please run "npm install && npm run dev" to compile the new frontend scaffolding.');
-            UIKit3Laravel6Preset::install();
+            UIKit3Preset::install();
         });
 
         PresetCommand::macro('uikit3-auth', function ($command) {
             $command->info('UIKit3 frontend auth scaffolding installed successfully.');
-            UIKit3Laravel6Preset::addAuthTemplates();
+            UIKit3Preset::addAuthTemplates();
         });
     }
 }

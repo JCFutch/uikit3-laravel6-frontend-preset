@@ -17,5 +17,5 @@
         "psr-4": {
             "UIKit3Presets": "src/UIKit3Presets"
         }
-    },
+    }
 }

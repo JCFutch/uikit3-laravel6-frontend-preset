@@ -42,7 +42,7 @@ class UIKit3Preset extends Preset
      */
     protected static function updatePackageArray(array $packages)
     {
-        return ['uikit' => '^3'] + Arr::except($packages, [
+        return ['uikit' => '^3.2.0'] + Arr::except($packages, [
             'bootstrap',
             'popper.js'
         ]);

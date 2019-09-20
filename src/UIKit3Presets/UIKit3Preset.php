@@ -18,7 +18,7 @@ class UIKit3Preset extends Preset
         static::removeOtherFrameworks();
         static::updatePackages();
         static::updateWebpackConfiguration();
-        //static::updateBootstrapping();
+        static::updateBootstrapping();
         static::removeNodeModules();
     }
 

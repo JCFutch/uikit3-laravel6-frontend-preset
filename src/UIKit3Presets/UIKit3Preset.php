@@ -55,7 +55,7 @@ class UIKit3Preset extends Preset
      */
     protected static function updateWebpackConfiguration()
     {
-        $mixPath = base_path('vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/none-stubs/webpack.mix.js');
+        $mixPath = base_path('vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/vue-stubs/webpack.mix.js');
         copy($mixPath, base_path('webpack.mix.js'));
     }
 
@@ -64,24 +64,23 @@ class UIKit3Preset extends Preset
      *
      * @return void
      */
-    protected static function updateBootstrapping()
-    {
-        copy(__DIR__.'/includes/app.scss', resource_path('sass/app.scss'));
+    //protected static function updateBootstrapping()
+    //{
+      //  copy(__DIR__.'/includes/app.scss', resource_path('sass/app.scss'));
 
-        tap(new Filesystem, function ($filesystem) {
-            $filesystem->delete(resource_path('sass/_variables.scss'));
+        //tap(new Filesystem, function ($filesystem) {
 
-            $bootstrapJs = str_replace(
-                "require('bootstrap');",
-                "window.UIkit = require('uikit');",
-                $filesystem->get(resource_path('js/bootstrap.js'))
-            );
+          //  $bootstrapJs = str_replace(
+            //    "require('bootstrap');",
+              //  "window.UIkit = require('uikit');",
+              //  $filesystem->get(resource_path('js/bootstrap.js'))
+          //  );
 
-            $bootstrapJs = str_replace("window.Popper = require('popper.js').default;", '', $bootstrapJs);
+          //  $bootstrapJs = str_replace("window.Popper = require('popper.js').default;", '', $bootstrapJs);
 
-            $filesystem->put(resource_path('js/bootstrap.js'), $bootstrapJs);
-        });
-    }
+        //    $filesystem->put(resource_path('js/bootstrap.js'), $bootstrapJs);
+      //  });
+  //  }
 
     /**
      * Copies in UIKit auth templates

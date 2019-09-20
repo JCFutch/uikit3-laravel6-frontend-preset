@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "UIKit3Presets": "src/UIKit3Presets"
+            "UIKit3Presets": "src/UIKit3Presets/"
         }
     }
 }

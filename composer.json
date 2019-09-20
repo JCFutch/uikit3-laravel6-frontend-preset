@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "JCFutch\\UIKit3Presets\\": "src/UIKit3Presets/"
+            "JCFutch\\UIKit3Presets\\": "src/"
         }
     },
     "extra": {

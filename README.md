@@ -7,7 +7,7 @@ Adds a preset for UIKit 3 scaffolding on new Laravel 6.0+ projects, will add ind
 
 1- Install via composer `composer require jcfutch/uikit3-laravel6-frontend-preset`.
 
-2- The package should use Laravel's new auto discovery. If not,  you can manually register the service provider - typically done inside the `app.php` providers array e.g `JCFutch\UIKit3Laravel6Preset\UIKit3Laravel6PresetServiceProvider::class`.
+2- The package should use Laravel's new auto discovery. If not,  you can manually register the service provider - typically done inside the `app.php` providers array e.g `JCFutch\UIKit3Presets\UIKit3PresetServiceProvider::class`.
 
 3- Run `php artisan preset uikit3` this will generate the js and scss needed.
 

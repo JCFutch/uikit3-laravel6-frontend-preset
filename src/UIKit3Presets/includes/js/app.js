@@ -4,8 +4,6 @@
  * application frontend using useful Laravel and JavaScript libraries.
  */
 
-require('./bootstrap');
-
 /** Import UIkit */
 import UIkit from 'uikit'
 import Icons from 'uikit/dist/js/uikit-icons'

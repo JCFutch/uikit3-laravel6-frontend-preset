@@ -71,14 +71,14 @@ class UIKit3Preset extends Preset
         tap(new Filesystem, function ($filesystem) {
 
             $bootstrapJs = str_replace(
-                "require('bootstrap');",
+                "require('./bootstrap');",
                 "window.UIkit = require('uikit');",
-                $filesystem->get(resource_path('js/bootstrap.js'))
+                $filesystem->get(resource_path('js/app.js'))
             );
 
             $bootstrapJs = str_replace("window.Popper = require('popper.js').default;", '', $bootstrapJs);
 
-            $filesystem->put(resource_path('js/bootstrap.js'), $bootstrapJs);
+            $filesystem->put(resource_path('js/app.js'), $bootstrapJs);
         });
     }
 

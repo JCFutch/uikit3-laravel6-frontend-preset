@@ -68,18 +68,7 @@ class UIKit3Preset extends Preset
     {
         copy(__DIR__.'/includes/app.scss', resource_path('sass/app.scss'));
 
-        tap(new Filesystem, function ($filesystem) {
-
-            $bootstrapJs = str_replace(
-                "require('./bootstrap');",
-                "window.UIkit = require('uikit');",
-                $filesystem->get(resource_path('js/app.js'))
-            );
-
-            $bootstrapJs = str_replace("window.Popper = require('popper.js').default;", '', $bootstrapJs);
-
-            $filesystem->put(resource_path('js/app.js'), $bootstrapJs);
-        });
+        copy(__DIR__.'/includes/js/app.js', resource_path('js/app.js'));
     }
 
     /**
